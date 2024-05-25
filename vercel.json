@@ -11,6 +11,13 @@
             "src":"/(.*)",
             "dest":"/",
             "methods":["POST","GET"]
-        }
+        },
+        {
+            "rewrites": [
+              { "source": "/(.*)", "destination": "/" }
+            ]
+          }
+        
     ]
+    
 }
