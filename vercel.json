@@ -1,23 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src" : "./index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"/",
-            "methods":["POST","GET"]
-        },
-        {
-            "rewrites": [
-              { "source": "/(.*)", "destination": "/" }
-            ]
-          }
-        
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
     ]
-    
-}
+  }
