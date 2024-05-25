@@ -1,16 +1,20 @@
 {
     "version": 2,
     "builds": [
-     {
-         "src": "./index.js",
-         "use": "@vercel/node"
-     }
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-     {
-         "src": "/(.*)",
-         "dest": "/"
-     }
+      {
+        "src": "/api/v1/customer/customer_register",
+        "dest": "/api/v1/customer/customer_register"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
     ]
- }
-
+  }
+  
