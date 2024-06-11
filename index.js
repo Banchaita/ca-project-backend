@@ -33,6 +33,9 @@ app.use(process.env.api_v1+'customer',customer)
 const schedule = require('./server/router/schedule')
 app.use(process.env.api_v1+'schedule',schedule)
 
+const navitem = require('./server/router/navitem')
+app.use(process.env.api_v1+'navitem',navitem)
+
 const port = process.env.port ||4000 
 app.listen(port,()=>{
     console.log('server is running',+port);

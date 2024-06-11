@@ -9,6 +9,6 @@ mongoose.connect(mongoDB,{
 
 var db = mongoose.connection;
 db.once('open',()=>{
-    console.log("connection estabished success");
+    console.log("connection established success");
 })
 
